@@ -6,14 +6,10 @@ const connection = mysql.createConnection({
     // Your MySQL username
     user: 'root',
     // Your MySQL password
-    password: '',
+    password: 'Falcao09+',
     database: 'database_company',
 });
 
-connection.connect((err) => {
-    if (err) throw err;
-    console.log('connected as id ' + connection.threadId + '\n');
-    start();
-});
+
 
 exports.connection = connection;
